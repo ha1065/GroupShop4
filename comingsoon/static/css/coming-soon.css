@@ -1,0 +1,241 @@
+/*!
+ * Start Bootstrap - Coming Soon v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/coming-soon)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-coming-soon/blob/master/LICENSE)
+ */
+
+/* html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  margin:0; /*Add this*/
+/* } */ 
+html {
+  width: fit-content;
+  height: fit-content;
+ 
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans';
+  font-weight: 700;
+}
+
+body {
+  width: fit-content;
+  height: fit-content;
+  /* height: 100%; */
+  position: absolute;
+  font-family: 'Open Sans';
+  /* font-family: 'Helvetica'; */
+  font-weight: normal;
+  
+  /* overflow: hidden; */
+}
+
+
+/* .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: #002E66 ; */
+  /* background-color: #ffffff; */
+  /* opacity: 0.75; */
+  /* z-index: -1;
+} */ */
+
+.masthead {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
+.masthead .masthead-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #cd9557; */
+  background-color: #fff;
+  /* transform: skewY(4deg);
+  transform-origin: bottom right; */
+}
+
+.masthead .masthead-content h1 {
+  font-size: 2.5rem;
+}
+
+.masthead .masthead-content p {
+  font-size: 1.2rem;
+}
+
+.masthead .masthead-content p strong {
+  font-weight: 700;
+}
+
+.masthead .masthead-content .input-group-newsletter input {
+  
+  position: relative;
+  margin-left: -83px;
+  width: 490px;
+  font-size: 1.5rem;
+  padding: 0rem;
+}
+
+.masthead .masthead-content .input-group-newsletter button {
+  margin-bottom: 8.6px;
+  margin-left: -7px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0.53rem;
+}
+
+@media (min-width: 768px) {
+  .masthead {
+    height: 77%;
+    width: 70.5rem;
+    padding-bottom: 0;
+  }
+  .masthead .masthead-bg {
+    transform: skewX(-8deg);
+    transform-origin: top right;
+  }
+  .masthead .masthead-content {
+    padding-left: 4rem;
+    padding-right: 10rem;
+  }
+  .masthead .masthead-content h1 {
+    font-size: 3.5rem;
+  }
+  .masthead .masthead-content p {
+    text-align: justify;
+    font-size: 1.3rem;
+  }
+}
+
+.social-icons ul {
+  margin-top: 1rem;
+}
+
+.social-icons ul > li {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: inline-block;
+}
+
+.social-icons ul > li > a {
+  display: inline;
+  color: white;
+  background-color: #F8991C;;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 0rem;
+  padding: 0.7rem;
+  /* height: 0rem;
+  width: 0rem; */
+}
+
+@media (min-width: 768px) {
+  .social-icons {
+    position: absolute;
+    right: -60px;
+    top: 1930px;
+    
+  }
+  .social-icons ul {
+    margin-top: 0;
+  }
+  .social-icons ul > li {
+    display: inline;
+    margin-left: 0;
+    margin-right: 1;
+    color: #F8991C;
+    /* margin-top: 20rem; */
+  }
+  .social-icons ul > li:last-child {
+    margin-bottom: 0;
+  }
+  .social-icons ul > li > a {
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+    line-height: 0em;
+    height: 10rem;
+    width: 6rem;
+  }
+  .social-icons ul > li > a:hover {
+    background-color: #F8991C;
+  }
+}
+
+
+.btn-secondary {
+  background-color: #282974;
+  border-color: #282974;
+}
+
+.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
+  background-color: #282974 !important;
+  border-color: #282974 !important;
+}
+
+.input {
+  font-weight: 300 !important;
+}
+
+/* .logo {
+  position: absolute;
+  box-sizing: content-box;
+  -ms-transform: rotate(0.00deg);
+  -webkit-transform: rotate(0.00deg);
+  transform: rotate(0.00deg);
+  -ms-transform-origin: center;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  background-image: url("img/x20200814groupshoplogofinal1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 1;
+  cursor: default;
+  margin-top: 0.00px;
+  margin-right: 0.00px;
+  margin-bottom: 0.00px;
+  margin-left: 0.00px;
+  padding-top: 0.00px;
+  padding-right: 0.00px;
+  padding-bottom: 0.00px;
+  padding-left: 0.00px;
+  background-color: rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(112, 112, 112, 1);
+  border-bottom-style: none;
+  border-bottom-width: 1.00px;
+  border-left-color: rgba(112, 112, 112, 1);
+  border-left-style: none;
+  border-left-width: 1.00px;
+  border-right-color: rgba(112, 112, 112, 1);
+  border-right-style: none;
+  border-right-width: 1.00px;
+  border-top-color: rgba(112, 112, 112, 1);
+  border-top-style: none;
+  border-top-width: 1.00px;
+  border-top-left-radius: 0.00px;
+  border-top-right-radius: 0.00px;
+  border-bottom-left-radius: 0.00px;
+  border-bottom-right-radius: 0.00px;
+  box-shadow: none;
+  width: 970.00px;
+  height: 138.00px;
+  left: -142.00px;
+  top: 209.00px;
+
+} */
