@@ -1,0 +1,340 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+    <title> GroupShop |  {% block title %}Home{% endblock%} </title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/coming-soon.css' %}" rel="stylesheet">
+    
+  <style>
+  /* .smartphone {
+    position: absolute;
+    left: 65%;
+    top: 0px;
+    width: 200;
+    height: 200;
+    margin: auto;
+    border: 16px black solid;
+    border-top-width: 60px;
+    border-bottom-width: 60px;
+    border-radius: 36px;
+  } */
+  /* .smartphone:before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 10px;
+  } */
+
+/* The circle on the bottom of the device */
+  /* .smartphone:after {
+    content: '';
+    display: block;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: -65px;
+    transform: translate(-50%, -50%);
+    background: #333;
+    border-radius: 50%;
+  } */
+
+/* The screen (or content) of the device */
+  /* .smartphone .content {
+    width: 310px;
+    height: 560px;
+    background: white;
+  } */
+  hr {
+  bottom: -200px;
+  /* display: inline-block; */
+  } 
+  img {
+    position: absolute;
+    display: block;
+    left: 0px; 
+    top: 0px;
+    margin-top: 50.00px;
+    margin-left: 210.00px;
+    margin-right: 0.00px;
+    margin-bottom: 0.00px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 970.00px;
+    /* height: 138.00px;
+    left: -142.00px;
+    top: 209.00px; */ 
+
+  }
+  video {
+    position: absolute;
+    left: 55%;
+    top: 1000px;
+    transform:translateX(-50%);
+  }
+  
+ 
+  .nav {
+  background-color: white; 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  }
+
+  .nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+  }
+  .center {
+  position: absolute;
+  left: 42%;
+  top: 1700px;
+  /* text-align: center; */
+  
+  }
+  .left {
+  position: absolute;
+  left: 4.5%;
+  top: 1700px;
+  /* text-align: center; */
+
+  }
+
+  .left1 {
+  position: absolute;
+  left: 4.5%;
+  top: 1930px;
+  }
+
+  .right {
+  position: absolute;
+  left: 87.5%;
+  top: 1700px;
+  /* text-align: center; */
+
+  }
+  @media only screen and (max-device-width: 480px) {
+        div#wrapper {
+            width: 400px;
+        }
+
+        div#header {
+            background-image: url(media-queries-phone.jpg);
+            height: 93px;
+            position: relative;
+        }
+
+        div#header h1 {
+            font-size: 140%;
+        }
+
+        #content {
+            float: none;
+            width: 100%;
+        }
+
+        #navigation {
+            float:none;
+            width: auto;
+        }
+    }
+
+  
+  
+  </style>
+  <script type="text/javascript">
+    function myFunction(){
+      alert("You have been added to the mailing list. Thank you for your interest.");
+    }
+  </script>
+  </head>
+
+  <body>
+    
+    
+    <!-- <div class="overlay"></div> -->
+    <!-- <img src="static/img/x20200814groupshoplogofinal1.png" style ="width : 30%" > -->
+    <div class="masthead">
+      
+      
+      <div class="masthead-bg"></div>
+      <img src="static/img/x20200814groupshoplogofinal1.png" style ="width : 50%; margin-top: 15.00px; margin-left: 250.00px;" >
+      <!-- <img style="width : 50% ; margin-left:320px" src="static/img/logo.png" > -->
+      
+      
+      <div class="container h-100">
+        
+        
+        <div class="row h-100">
+           
+          <div class="col-12 my-auto">
+            
+            <div class="masthead-content text-white py-5 py-md-0">
+              <!-- <h2 style="color : #002E66" class="mb-3">What is GroupShop?</h2>  -->
+              <!-- <div class="logo"></div>  -->
+              
+              <p style="color : #282974; margin-top: 120.00px; margin-left: 30.00px; text-align: center;" class="mb-8">GroupShop is Pakistan's first social e-commerce website, where customers <br />  can create groups and get high-quality items at low prices! <br /><br />  Interested? Sign up below and we'll get in touch with updates!  </p>
+              
+              <div class="input-group input-group-newsletter">
+                <form method="post" style = "margin-left: 150.00px;">
+                  {% csrf_token %}
+                  {{ form }}
+                  <!-- <input type="email" class="form-control" placeholder="Enter email..."  aria-label="Search for..." style="width: 600px"> -->
+                  <!-- <button type="submit">Sign up</button> -->
+                  <button type='submit' class="btn btn-secondary"  onclick="myFunction()" >Notify Me!</button>
+                  
+
+                </form>
+                
+                <!-- <form action="/action_page.php">
+                  <input type="email" class="form-control" placeholder="Enter email..."  aria-label="Search for..." style="width: 600px">
+                </form> -->
+                <!-- <input type="email" class="form-control" placeholder="Enter email..."  aria-label="Search for..." style="width: 10px"> -->
+                <!-- <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Notify Me!</button>
+                  
+                  
+                </span> -->
+                
+                
+              </div>
+              
+            </div>
+            
+            
+
+              
+              <div class="center">
+                
+                <img src="static/img/bg4.jpeg" style ="width : 45% ; top:-215px; left: -110px" >
+                <h2 style="color : #282974; text-align: center" >HIGH QUALITY</h2>
+                <p style="color : #F8991C; text-align:center; ">We get our products from official third parties only, <br /> so you can trust on the quality!.</p>
+              </div>
+              <div class="left">
+                
+                <img src="static/img/bg5.jpeg" style ="width : 45%; top:-190px; left: -130px" >
+                <h2 style="color : #282974; text-align: center" >LOW PRICES</h2>
+                <p style="color : #F8991C; text-align:center">Join existing groups or create new ones with <br /> friends and family and get amazing <br /> discounts! .</p>
+                
+              </div>
+              <div class="right">
+                <img src="static/img/bg3.jpeg" style ="width : 75%; top:-199px; left: -190px" >
+                <h2 style="color : #282974; text-align: center" >CONVENIENT</h2>
+                <p style="color : #F8991C; text-align:center">Order from the comfort of your home and save yourself the trip outside!.</p>
+              </div>
+
+              <div class="left1">
+                <p style="color : #282974; text-align:center;">Contact us: groupshop@gmail.com</p>
+              </div>
+
+            </div>
+
+            
+            <div class="video"></div>
+              <video width="500" height="500" controls>
+                <source src="static/mp4/bg7.mp4" type="video/mp4"> -->
+                <!-- <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag. -->
+              </video>
+              <hr>
+            </div>
+            
+            
+            
+            
+          </div>
+          
+          
+        </div>
+        
+      </div>
+      
+      
+    </div>
+
+    
+
+
+    
+    
+    
+    
+    
+    
+    <div class="social-icons">
+      
+      <ul class="list-unstyled text-center mb-0">
+        <li class="list-unstyled-item">
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="https://www.facebook.com/Groupshop.pk">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="list-unstyled-item">
+          <a href="https://www.instagram.com/groupshop.pk/">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    
+
+    
+
+    <div class="video">
+              <video width="305" height="570" controls style = "position: absolute; top:400.00px; left: 550px; margin-top: 0.00px; margin: auto; border: 10px black solid; border-top-width: 16px; border-bottom-width: 16px; border-radius: 36px;">
+                <source src="static/mp4/bg6.mp4" type="video/mp4">
+                <!-- <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag. -->
+              </video>
+    </div>
+
+    
+    
+    
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/vide/jquery.vide.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/coming-soon.js' %}"></script>
+
+  </body>
+
+</html>

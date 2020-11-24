@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<head><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"></head>
+<body>
+<style>
+  .btn {
+    background-color: #051F7D;
+    color: white;
+    padding: 2px;
+    border: none;
+    width: 90px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+  
+.btn:hover {
+    background-color: #051F7D;
+}
+</style>
+
+<div style ="width : 100vh; height: 100vh; "class="w3-container w3-card">
+  <p style = "position: absolute;
+  width: 36px;
+  height: 12px;
+  left: 18px;
+  top: 40px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 18px;
+
+  color: #051F7D;"><a style = "color:#051F7D;" href="javascript:history.back()">Back</a></p>
+  <p><img src="/static/img/x20200814groupshoplogofinal1.png" style ="position: absolute;
+  width: 14vw;
+  height: 30px;
+  left: 103px;
+  top: 12px;" ></p>
+  
+  <br>
+  <hr align='left' style = "width : 100vw; " > 
+
+
+  
+
+  <p><img src="/static/img/yoghurt.jpg" style ="position: absolute;
+    width: 40vw;
+    height: 30px;
+    left: 30vw;
+    right: 30vw;
+    top: 93px;" ></p>
+
+  
+
+  <p style = "position: absolute;
+  width: 212px;
+  height: 125px;
+  left: 87px;
+  top: 100px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #051F7D;
+  text-align: center;
+
+  ">Current Price : 99 Rs</p> 
+
+  
+  <p style = "position: absolute;
+  width: 212px;
+  height: 125px;
+  left: 88px;
+  top: 130px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+
+  color: #051F7D;
+  text-align: center;
+
+  ">Group Status : Public</p> 
+
+  
+
+  <svg height="360" width="330" >
+    
+
+    <rect x="10" y="200" width="280" height="20"
+    style = "fill:#051F7D;stroke:black;stroke-width:0.2;"/>
+    <text fill="white" font-size="12" font-weight = "bold" font-family="Open Sans"  x="80" y="212">Buyer's Group (24 people)</text>
+    <rect x="10" y="220" width="280" height="40"
+    style = "fill:white;stroke:black;stroke-width:0.2;"/>
+    <!-- <a href="/comingsoon/delivery_yoghurt.html">
+      <rect x="115" y="230" width="20%" height="4.5%" rx="2%"
+      style="fill:#051F7D;stroke:black;stroke-width:0.2;" />
+    </a>
+    <text fill="white" font-size="10" font-weight = "normal" font-family="Open Sans"  x="120" y="240.5">JOIN GROUP</text> -->
+    <!-- <rect x="160" y="300" width="160" height="60"
+    style = "fill:#051F7D;stroke:black;stroke-width:0.2;"/> -->
+
+    
+    <text fill="#FFFFFF" font-size="12" font-weight = "bold" font-family="Open Sans"  x="187" y="330">Buy in Groups : 99 Rs</text>
+
+
+  </svg>
+
+
+  <form action = '/comingsoon/delivery_yoghurt.html/'  >
+    <input type="hidden" id="quantity" name="quantity" min="1" max="5">
+    <input style= "position: absolute;
+    
+    left: 110px;
+    top: 287px;
+  
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;" type="submit" value="JOIN GROUP" class="btn">
+    
+    
+  </form>
+
+
+  <script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    
+    var sn = getParameterByName('quantity');
+    
+    document.getElementById("quantity").value = sn;
+    
+    </script>
+<!-- /* Rectangle 1 */
+
+  
+
+
+position: absolute;
+width: 360px;
+height: 104px;
+left: 0px;
+top: 85px;
+
+background: #F9F9F9; -->
+
+<!-- <svg  width="360px" height="600px">
+  <rect x = '50' y = '80' width="360px" height="104px" style="fill:#F9F9F9;stroke-width:3;" />
+  <rect x = '50' y = '185' width="360px" height="104px" style="fill:#FFFFFF;stroke-width:3;" />
+  <rect x = '50' y = '290' width="360px" height="104px" style="fill:#F9F9F9;stroke-width:3;" />
+  <rect x = '50' y = '395' width="360px" height="104px" style="fill:#FFFFFF;stroke-width:3;" />
+  <rect x = '50' y = '500' width="360px" height="104px" style="fill:#F9F9F9;stroke-width:3;" />
+
+  <text fill="#051F7D" font-size="12" font-family="Open Sans"  x="60" y="100">Milk (1 Litre)</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="320" y="170">135 Rs</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="280" y="170" text-decoration="line-through">150 Rs</text>
+
+  <text fill="#051F7D" font-size="12" font-family="Open Sans"  x="60" y="200">Bread</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="320" y="270">99 Rs</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="280" y="270" text-decoration="line-through">110 Rs</text>
+
+  <text fill="#051F7D" font-size="12" font-family="Open Sans"  x="60" y="305">Yoghurt</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="320" y="375">99 Rs</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="280" y="375" text-decoration="line-through">110 Rs</text>
+
+  <text fill="#051F7D" font-size="12" font-family="Open Sans"  x="60" y="410">Eggs</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="320" y="480">221 Rs</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="280" y="480" text-decoration="line-through">245 Rs</text>
+
+  <text fill="#051F7D" font-size="12" font-family="Open Sans"  x="60" y="515">Potatoes</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="313" y="585">3600 Rs</text>
+  <text  fill="#051F7D" font-size="11" font-family="Open Sans"  x="263" y="585" text-decoration="line-through">4,499 Rs</text>
+
+  <image href="static/img/milk.jpg"  height="75" width="75" x = '-10' y='90'/>
+  <image href="static/img/bread.jpg"  height="75" width="75" x = '-10' y='195'/>
+  <image href="static/img/yoghurt.jpg"  height="58" width="58" x = '-2' y='310'/>
+  <image href="static/img/eggs.jpg"  height="55" width="55" x = '2' y='405'/>
+  <image href="static/img/potatoes.jpg"  height="55" width="55" x = '-4' y='505'/>
+
+
+</svg> -->
+</div>
+
+</body>

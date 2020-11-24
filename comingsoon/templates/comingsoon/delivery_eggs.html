@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head><link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"></head>
+<style>
+body {
+  font-family: Open sans-serif;
+  font-size: 15px;
+ 
+}
+
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+
+
+.col-25 {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+}
+
+.col-50 {
+  -ms-flex: 100%; /* IE10 */
+  flex: 100%;
+}
+
+
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 1px 2px 3px 4px;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+
+input[type=text] {
+  width: 60vw;
+  margin-left: 10vw;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+
+
+.btn {
+  background-color: #051F7D;
+  color: white;
+  padding: 12px;
+  margin: 100vh 0 0 0 ;
+  border: none;
+  width: 100vw;
+  border-radius: 0.5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn:hover {
+  background-color: #051F7D;
+}
+
+
+
+
+
+
+</style>
+
+<body>
+
+<div style ="width : 100vh; height: 100vh; "class="w3-container w3-card">
+  <p style = "position: absolute;
+  width: 36px;
+  height: 12px;
+  left: 18px;
+  top: 40px;
+
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 18px;
+
+  color: #051F7D;"><a style = "color:#051F7D;" href="javascript:history.back()">Back</a></p>
+  <p><img src="/static/img/x20200814groupshoplogofinal1.png" style ="position: absolute;
+  width: 40vw;
+  height: 30px;
+  left: 30vw;
+  right: 30vw;
+  top: 12px;" ></p>
+  
+  <br>
+  <hr align='left' style = "width : 100vw; "> 
+
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="" method="POST">
+          {% csrf_token %}
+        
+          <div class="row">
+            <div class="col-50">
+              <h3 style="text-indent: 15vw; color: #051F7D;">Delivery Address Details</h3>
+              
+              <input type="text" id="fname" name="name" placeholder="Full Name">
+              <br>
+              <input type="text" id="Number" name="number" placeholder="Mobile Number">
+              <br>
+              <input type="text" id="adr" name="address" placeholder="Address Line">
+              <br>
+              <input type="text" id="city" name="city" placeholder="City">
+  
+              <div class="row">
+                <div class="col-50">
+                  
+                  <input type="text" id="state" name="province" placeholder="Province">
+                </div>
+                <div class="col-50">
+                  
+                  <input type="text" id="zip" name="zipcode" placeholder="Zip Code">
+                  <input type="hidden" id="Item" name="item" value="Eggs">
+                  <input type="hidden" id="quantity" name="quantity" min="1" max="5">
+                  <input type="hidden" id="method" name="method" value="GroupShop">
+                </div>
+              </div>
+            </div>
+  
+            
+          
+          <input type="submit" value="Checkout" class="btn">
+        </form>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    
+    var sn = getParameterByName('quantity');
+    
+    document.getElementById("quantity").value = sn;
+    console.log(document.getElementById("quantity").value)
+    
+  </script>
+
+  
+
+  
+</div>
+
+</body>
